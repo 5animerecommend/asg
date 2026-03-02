@@ -12,7 +12,7 @@ app.use(cors()); // CORS 설정
 const server = http.createServer(app);
 const io = new Server(server{
     cors: {
-        origin: "*"// 실제 배포 시에는 클라이언트 도메인으로 제한하는 것이 좋습니다.
+        origin: "*",// 실제 배포 시에는 클라이언트 도메인으로 제한하는 것이 좋습니다.
         methods: ["GET""POST"]
     }
 });
